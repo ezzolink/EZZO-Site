@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0a0a0f;
+  color: white;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Premium Animations */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4),
+      0 0 40px rgba(139, 92, 246, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6),
+      0 0 60px rgba(139, 92, 246, 0.4),
+      0 0 80px rgba(236, 72, 153, 0.2);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  background-size: 1000px 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Parallax support */
+.parallax-slow,
+.parallax-medium,
+.parallax-fast {
+  will-change: transform;
+}
+
+/* ========================================
+   ACESSIBILIDADE WCAG AA
+   ======================================== */
+
+/* Respeitar preferência de animações reduzidas */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Classe para animações reduzidas globalmente */
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* Focus indicators melhorados para navegação por teclado */
+.user-is-tabbing *:focus {
+  outline: 3px solid #3b82f6 !important;
+  outline-offset: 3px !important;
+}
+
+.user-is-tabbing button:focus,
+.user-is-tabbing a:focus,
+.user-is-tabbing input:focus,
+.user-is-tabbing textarea:focus,
+.user-is-tabbing select:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5) !important;
+}
+
+/* Skip to content link - acessibilidade */
+.skip-to-content:focus {
+  position: fixed !important;
+  left: 10px !important;
+  top: 10px !important;
+  z-index: 9999 !important;
+  background: #000 !important;
+  color: #fff !important;
+  padding: 1rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Contraste mínimo WCAG AA */
+.text-low-contrast {
+  color: #6b7280;
+  /* Mínimo 4.5:1 em fundo escuro */
+}
+
+/* Indicador visual para sreferências de contraste alto */
+@media (prefers-contrast: high) {
+  * {
+    border-color: currentColor !important;
+  }
+}

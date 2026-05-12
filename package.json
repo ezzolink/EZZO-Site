@@ -1,0 +1,40 @@
+{
+    "name": "ezzo-site",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint .",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@emailjs/browser": "^4.4.1",
+        "@google/generative-ai": "^0.24.1",
+        "@radix-ui/react-slot": "^1.2.4",
+        "@react-spring/web": "^10.0.3",
+        "@supabase/supabase-js": "^2.89.0",
+        "clsx": "^2.1.0",
+        "framer-motion": "^11.0.3",
+        "gsap": "^3.14.2",
+        "lucide-react": "^0.344.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.22.3",
+        "tailwind-merge": "^2.2.1",
+        "use-sound": "^5.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.24",
+        "@types/react": "^18.2.61",
+        "@types/react-dom": "^18.2.19",
+        "@vitejs/plugin-react": "^4.2.1",
+        "autoprefixer": "^10.4.18",
+        "postcss": "^8.4.35",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5.3.3",
+        "vite": "^5.1.4",
+        "vite-plugin-pwa": "^1.2.0"
+    }
+}
