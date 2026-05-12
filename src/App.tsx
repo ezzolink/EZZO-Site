@@ -102,7 +102,7 @@ function App() {
     return (
         <NotificationProvider>
             <CartProvider>
-                <Router>
+                <Router basename="/EZZO-Site">
                     <SkipToContent />
                     <ScrollProgressBar />
                     <StickyCTABar />
