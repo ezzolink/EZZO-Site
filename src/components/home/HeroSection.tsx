@@ -116,7 +116,7 @@ export default function HeroSection() {
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4 }} className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">Design inovador, tecnologia de ponta, Automações, produção musical e audiovisual de excelência
+                        transition={{ delay: 0.4 }} className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">Criação de sites, Apps, e sistemas personalizados para seu negócio e empresa. Design inovador, tecnologia de ponta, IA para empresas e Automações.
 
 
 
