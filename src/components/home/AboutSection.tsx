@@ -30,10 +30,10 @@ export default function AboutSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="absolute -bottom-6 -right-6 bg-[#111827] rounded-xl p-6 shadow-2xl border border-gray-800">
+                            className="sm:absolute sm:-bottom-6 sm:-right-6 bg-[#111827] rounded-xl p-4 sm:p-6 shadow-2xl border border-gray-800 mt-4 sm:mt-0">
 
-                            <div className="text-3xl font-bold text-blue-500">5+</div>
-                            <div className="text-gray-400 text-sm">Anos de experiência</div>
+                            <div className="text-2xl sm:text-3xl font-bold text-blue-500">5+</div>
+                            <div className="text-gray-400 text-xs sm:text-sm">Anos de experiência</div>
                         </motion.div>
                     </motion.div>
 
