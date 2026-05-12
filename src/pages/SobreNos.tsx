@@ -91,7 +91,7 @@ export default function SobreNos() {
             </section>
 
             {/* Stats */}
-            <section className="bg-[#111827] py-1">
+            <section className="bg-[#111827] py-8 sm:py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {stats.map((stat, index) =>
@@ -109,7 +109,7 @@ export default function SobreNos() {
             </section>
 
             {/* Story */}
-            <section className="bg-[#0a0a0f] py-10">
+            <section className="bg-[#0a0a0f] py-12 sm:py-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                         className="space-y-8">
@@ -209,12 +209,12 @@ export default function SobreNos() {
             </section>
 
             {/* CTA */}
-            <section className="bg-gradient-to-br py-4 from-blue-600 to-blue-800">
+            <section className="bg-gradient-to-br py-12 sm:py-20 from-blue-600 to-blue-800">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                         className="space-y-6">
 
-                        <h2 className="text-white text-xl font-bold sm:text-4xl">Vamos trabalhar juntos?
+                        <h2 className="text-white text-xl sm:text-2xl md:text-4xl font-bold">Vamos trabalhar juntos?
 
                         </h2>
                         <p className="text-blue-100 text-base">Entre em contacto connosco e descubra como podemos ajudar a
@@ -223,8 +223,8 @@ export default function SobreNos() {
 
                         </p>
                         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-                            className="bg-white text-blue-600 px-2 py-2 text-lg font-semibold rounded-xl inline-flex items-center gap-3 transition-all duration-300 hover:shadow-2xl">Fale
-                            Conosco no WhatsApp
+                            className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl inline-flex items-center gap-3 transition-all duration-300 hover:shadow-2xl">
+                            Fale Conosco no WhatsApp
 
 
 

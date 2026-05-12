@@ -26,7 +26,7 @@ const partners = [
 
 export default function PartnersSection() {
     return (
-        <section className="bg-[#0a0a0f] py-5 sm:py-20 border-t border-gray-800">
+        <section className="bg-[#0a0a0f] py-8 sm:py-20 border-t border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h3
                     initial={{ opacity: 0, y: 20 }}

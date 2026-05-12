@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
 
             <div className="relative mx-auto px-3 py-12 max-w-7xl sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                     {/* Logo e Descrição */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

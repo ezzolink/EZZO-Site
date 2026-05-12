@@ -153,7 +153,7 @@ export default function ServicesSection() {
                                 </motion.button>
 
                                 {/* Grid de Botões */}
-                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 p-6">
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 p-4 sm:p-6">
                                     {serviceSubcategories[expandedMenu]?.map((subcat, idx) => {
                                         const IconComponent = subcat.icon;
                                         return (
@@ -172,10 +172,10 @@ export default function ServicesSection() {
                                                     setSelectedService(subcat.id);
                                                 }}
                                                 className="group relative bg-[#0a0a0f] border-2 border-gray-800/50
-                                                    p-8 rounded-2xl shadow-2xl 
+                                                    p-4 sm:p-8 rounded-2xl shadow-2xl
                                                     hover:scale-110 transition-all duration-500
-                                                    flex flex-col items-center justify-center gap-4
-                                                    min-w-[160px] min-h-[160px] overflow-hidden"
+                                                    flex flex-col items-center justify-center gap-2 sm:gap-4
+                                                    min-w-[140px] sm:min-w-[160px] min-h-[140px] sm:min-h-[160px] overflow-hidden"
                                                 style={{
                                                     boxShadow: `0 0 0 0 ${subcat.color}40`
                                                 }}
@@ -198,7 +198,7 @@ export default function ServicesSection() {
 
                                                 {/* Ícone */}
                                                 <IconComponent
-                                                    className="w-14 h-14 text-gray-400 group-hover:text-white transition-all duration-500 relative z-10"
+                                                    className="w-10 h-10 sm:w-14 sm:h-14 text-gray-400 group-hover:text-white transition-all duration-500 relative z-10"
                                                     strokeWidth={1.5}
                                                     style={{
                                                         filter: 'drop-shadow(0 0 0 transparent)',
@@ -214,7 +214,7 @@ export default function ServicesSection() {
 
                                                 {/* Label */}
                                                 <span
-                                                    className="text-gray-300 group-hover:text-white font-bold text-base text-center relative z-10 transition-all duration-500"
+                                                    className="text-sm sm:text-base text-gray-300 group-hover:text-white font-bold text-center relative z-10 transition-all duration-500"
                                                     style={{
                                                         textShadow: '0 0 0 transparent'
                                                     }}
